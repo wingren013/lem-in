@@ -49,7 +49,7 @@ FILES = $(addprefix src1/, $(FILENAMES))
 FILES2 = $(addprefix $(DIR2)/, $(FILENAMES2))
 FILES3 = $(addprefix $(DIR3)/, $(FILENAMES3))
 GNL = gnl/get_next_line.c
-CFLAGS = -Wall -Werror -Wextra -fsanitize=address
+CFLAGS = -Wall -Werror -Wextra
 TARGET = lem-in
 
 .PHONY: all index clean fclean re comp
