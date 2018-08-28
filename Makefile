@@ -65,16 +65,16 @@ index:
 	ranlib $(NAME)
 
 $(TARGET): $(NAME) $(OBJS3)
-	gcc $(GNL) $(NAME) $(OBJS3) $(CFLAGS) -I $(INCLUDE) -o $(TARGET)
+	clang $(GNL) $(NAME) $(OBJS3) $(CFLAGS) -I $(INCLUDE) -o $(TARGET)
 
 build/%.o: src1/%.c | build
-	gcc -c $^ -o $@ $(CFLAGS)
+	clang -c $^ -o $@ $(CFLAGS)
 
 build/%.o: $(DIR2)/%.c | build
-	gcc -c $^ -o $@ $(CFLAGS) $(DIR2INC)
+	clang -c $^ -o $@ $(CFLAGS) $(DIR2INC)
 
 build/%.o: $(DIR3)/%.c | build
-	gcc -c $^ -o $@ $(CFLAGS) -I $(INCLUDE)
+	clang -c $^ -o $@ $(CFLAGS) -I $(INCLUDE)
 
 build:
 	mkdir build

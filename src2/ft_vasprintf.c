@@ -114,11 +114,9 @@ static size_t	loop(char **strp, unsigned char *fmt, t_holder *holder,
 
 int				ft_vasprintf(char **strp, const char *fmtstr, va_list argp)
 {
-	size_t				i;
 	t_holder			*holder;
 	unsigned char		*fmt;
 
-	i = 0;
 	setup_funcs();
 	fmt = (unsigned char*)ft_strdup(fmtstr);
 	holder = (t_holder*)malloc(sizeof(t_holder) * 1);

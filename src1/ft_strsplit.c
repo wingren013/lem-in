@@ -45,7 +45,7 @@ static char		**split(char **current, char *ori, int words, char c)
 	return (current);
 }
 
-char static		**shame(char **array, int wordcount, int big)
+static char		**shame(char **array, int wordcount, int big)
 {
 	int		i;
 

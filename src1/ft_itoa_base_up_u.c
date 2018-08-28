@@ -41,10 +41,8 @@ static void		normstr_base_u(unsigned long long n, char **ret, int base)
 
 char			*ft_itoa_base_up_u(unsigned long long n, int base)
 {
-	int		exit;
 	char	*ret;
 
-	exit = 0;
 	if (n == 0)
 		return (ft_strdup("0"));
 	if (n == ULLONG_MAX)

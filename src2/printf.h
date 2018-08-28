@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <wchar.h>
 # include <stdarg.h>
+# include <stdint.h>
 
 typedef size_t			(*t_strfunc)();
 typedef struct			s_holder

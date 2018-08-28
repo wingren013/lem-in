@@ -26,11 +26,6 @@ int			g_str(char *buf)
 
 void		displaymaze(void)
 {
-	size_t	i;
-	size_t	l;
-
-	l = 0;
-	i = 0;
 	ft_printf("\n\n--------------------------\n\n");
 	ft_printf("%s", g_string);
 	ft_printf("\n\n--------------------------\n\n");
